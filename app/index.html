@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,9 +8,370 @@
   <title>Document</title>
   <link rel="stylesheet" href="css/style.min.css">
 </head>
-<body>  
+
+<body>
+  <header class="header">
+    <div class="header__top">
+      <div class="container">
+        <div class="header__top-inner">
+          <button class="menu__btn"></button>
+          <a class="header__logo" href="#">
+            <img src="images/logo.png" alt="logo">
+          </a>
+          <form class="header__top-form">
+            <input class="header__top-input" type="text" placeholder="Search">
+            <button class="header__top-btn" type="submit">
+              <img src="images/search.svg" alt="">
+            </button>
+          </form>
+          <button class="btn__search"></button>
+        </div>
+      </div>
+    </div>
+
+    <nav class="nav" id="nav">
+      <div class="container">
+        <ul class="nav__list">
+          <li class="nav__item"><a class="nav__link" href="#">Home </a></li>
+          <li class="nav__item"><a class="nav__link" href="#">SERVICES </a></li>
+          <li class="nav__item"><a class="nav__link" href="#">Portfolio </a></li>
+          <li class="nav__item"><a class="nav__link" href="#">Gallery </a></li>
+          <li class="nav__item"><a class="nav__link" href="#">Help & FAQ </a></li>
+          <li class="nav__item"><a class="nav__link" href="#">About </a></li>
+          <li class="nav__item"><a class="nav__link nav__link--contact" href="#">Contact </a></li>
+        </ul>
+      </div>
+    </nav>
+    </div>
+  </header>
 
 
+  <main class="main">
+    <section class="buttons">
+      <div class="container">
+        <h2 class="buttons__title">Buttons </h2>
+        <div class="buttons__inner"><button class="btn btn-1" type="submit">Primary</button><button class="btn btn-2"
+            type="submit">Default</button><button class="btn btn-3" type="submit">Success</button><button
+            class="btn btn-4" type="submit">info</button><button class="btn btn-5" type="submit">Warning</button><button
+            class="btn btn-6" type="submit">Danger</button></div>
+      </div>
+    </section>
+    <section class="inputs">
+      <div class="container">
+        <h2 class="inputs__title">Inputs </h2>
+        <div class="inputs__inner">
+          <form class="checkbox-form item"><label class="checkbox-form__label"><input class="checkbox-form__input"
+                type="checkbox" checked><span class="checkbox-form__check"></span>Checkbox Active </label><label
+              class="checkbox-form__label"><input class="checkbox-form__input" type="checkbox"><span
+                class="checkbox-form__check"></span>Checkbox </label></form>
+          <form class="radio-form item"><label class="radio-form__label"><input class="radio-form__input" type="radio"
+                name="radio" checked><span class="radio-form__check"></span>Radio Active </label><label
+              class="radio-form__label"><input class="radio-form__input" type="radio" name="radio"><span
+                class="radio-form__check"></span>Radio </label></form>
+          <form class="switcher__form item"><label class="checkbox-ios"><input type="checkbox" checked><span
+                class="checkbox-ios-switch"></span>Switcher ON </label><label class="checkbox-ios"><input
+                type="checkbox"><span class="checkbox-ios-switch"></span>Switcher OFF </label></form>
+        </div>
+      </div>
+    </section>
+    <section class="rating">
+      <div class="container">
+        <h2 class="rating__title">Star rating </h2>
+        <div class="rating__show">
+          <div class="rating__body">
+            <div class="rating__active" style="width: 48%;"></div>
+            <div class="rating__items">
+              <input class="rating__item" type="radio" value="1" name="rating">
+              <input class="rating__item" type="radio" value="2" name="rating">
+              <input class="rating__item" type="radio" value="3" name="rating">
+              <input class="rating__item" type="radio" value="4" name="rating">
+              <input class="rating__item" type="radio" value="5" name="rating">
+            </div>
+          </div>
+          <div class="rating__text">
+            Show rating
+          </div>
+        </div>
+        <div class="rating-check">
+          <div class="rating-check__star">
+            <div class="rating-check__items">
+              <input class="rating-check__item" id="rating-check__item-5" type="radio" value="5" name="rating">
+              <label class="rating-check__label" for="rating-check__item-5"></label>
+              <input class="rating-check__item" id="rating-check__item-4" type="radio" value="4" name="rating">
+              <label class="rating-check__label" for="rating-check__item-4"></label>
+              <input class="rating-check__item" id="rating-check__item-3" type="radio" value="3" name="rating">
+              <label class="rating-check__label" for="rating-check__item-3"></label>
+              <input class="rating-check__item" id="rating-check__item-2" type="radio" value="2" name="rating">
+              <label class="rating-check__label" for="rating-check__item-2"></label>
+              <input class="rating-check__item" id="rating-check__item-1" type="radio" value="1" name="rating" checked>
+              <label class="rating-check__label" for="rating-check__item-1"></label>
+            </div>
+          </div>
+          <div class="rating-check__text">
+            Check rating
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="carusel">
+      <div class="container">
+        <h2 class="carusel__title">
+          Carousel
+        </h2>
+        <div class="carusel__inner">
+          <div class="carusel__big">
+            <div class="carusel__big-item">
+              <div class="carusel__big-item__inner">
+                <div class="carusel__big-item__imgbox">
+                  <img class="carusel__big-item__img" src="images/carusel/big/1.jpg" alt="">
+                </div>
+                <div class="carusel__big-item__content">
+                  <p class="carusel__big-item__text">
+                    When I started, I weighed over 425 pounds. What matters is that you take the steps and focus on
+                    making
+                    one good choice
+                    at a time.
+                  </p>
+                  <h4 class="carusel__big-item__title">
+                    Chewbacca
+                  </h4>
+                  <p class="carusel__big-item__date">
+                    July 2017
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="carusel__big-item">
+              <div class="carusel__big-item__inner">
+
+                <div class="carusel__big-item__imgbox">
+                  <img class="carusel__big-item__img" src="images/carusel/big/1.jpg" alt="">
+                </div>
+                <div class="carusel__big-item__content">
+                  <p class="carusel__big-item__text">
+                    When I started, I weighed over 425 pounds. What matters is that you take the steps and focus on
+                    making
+                    one good choice
+                    at a time.
+                  </p>
+                  <h4 class="carusel__big-item__title">
+                    Chewbacca
+                  </h4>
+                  <p class="carusel__big-item__date">
+                    July 2017
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="carusel__big-item">
+              <div class="carusel__big-item__inner">
+                <div class="carusel__big-item__imgbox">
+                  <img class="carusel__big-item__img" src="images/carusel/big/1.jpg" alt="">
+                </div>
+                <div class="carusel__big-item__content">
+                  <p class="carusel__big-item__text">
+                    When I started, I weighed over 425 pounds. What matters is that you take the steps and focus on
+                    making
+                    one good choice
+                    at a time.
+                  </p>
+                  <h4 class="carusel__big-item__title">
+                    Chewbacca
+                  </h4>
+                  <p class="carusel__big-item__date">
+                    July 2017
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="carusel__big-item">
+              <div class="carusel__big-item__inner">
+                <div class="carusel__big-item__imgbox">
+                  <img class="carusel__big-item__img" src="images/carusel/big/1.jpg" alt="">
+                </div>
+                <div class="carusel__big-item__content">
+                  <p class="carusel__big-item__text">
+                    When I started, I weighed over 425 pounds. What matters is that you take the steps and focus on
+                    making
+                    one good choice
+                    at a time.
+                  </p>
+                  <h4 class="carusel__big-item__title">
+                    Chewbacca
+                  </h4>
+                  <p class="carusel__big-item__date">
+                    July 2017
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carusel__thumb">
+            <div class="carusel__thumb-item">
+              <div class="carusel__thumb-imgbox">
+                <img class="carusel__thumb-img" src="images/carusel/small/1.jpg" alt="">
+              </div>
+
+            </div>
+            <div class="carusel__thumb-item">
+              <div class="carusel__thumb-imgbox">
+                <img class="carusel__thumb-img" src="images/carusel/small/2.jpg" alt="">
+              </div>
+
+            </div>
+            <div class="carusel__thumb-item">
+              <div class="carusel__thumb-imgbox">
+                <img class="carusel__thumb-img" src="images/carusel/small/3.jpg" alt="">
+              </div>
+
+            </div>
+            <div class="carusel__thumb-item">
+              <div class="carusel__thumb-imgbox">
+                <img class="carusel__thumb-img" src="images/carusel/small/4.jpg" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+  </main>
+
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__shop footer__item">
+          <div class="footer__item-title footer__shop-title">
+            Shop
+          </div>
+          <ul class="footer__list footer-shop__list">
+            <li class="footer__list-item">
+              <a class="footer__list-link" href="#">
+                Browse By Holidays
+              </a>
+            </li>
+            <li class="footer__list-item">
+              <a class="footer__list-link" href="#">
+                Browse By Brand
+              </a>
+            </li>
+            <li class="footer__list-item">
+              <a class="footer__list-link" href="#">
+                Gift of the Month Clubs
+              </a>
+            </li>
+            <li class="footer__list-item">
+              <a class="footer__list-link" href="#">
+                Customized Bottles
+              </a>
+            </li>
+            <li class="footer__list-item">
+              <a class="footer__list-link" href="#">
+                Corporate Gifts
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer__about footer__item">
+          <div class="footer__item-title footer__about-title">
+            About
+          </div>
+          <ul class="footer__list footer-about__list">
+            <li class="footer__list-item">
+              <a class="footer__list-link" href="#">
+                About Spirited Gifts
+              </a>
+            </li>
+            <li class="footer__list-item">
+              <a class="footer__list-link" href="#">
+                Read our Blog
+              </a>
+            </li>
+            <li class="footer__list-item">
+              <a class="footer__list-link" href="#">
+                About our Selection
+              </a>
+            </li>
+            <li class="footer__list-item">
+              <a class="footer__list-link" href="#">
+                Read our Reviews
+              </a>
+            </li>
+            <li class="footer__list-item">
+              <a class="footer__list-link" href="#">
+                Shipping & Returns
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer__more footer__item">
+          <div class="footer__item-title footer__more-title">
+            More
+          </div>
+          <ul class="footer__list footer-more__list">
+            <li class="footer__list-item">
+              <a class="footer__list-link" href="#">
+                Privacy Policy
+              </a>
+            </li>
+            <li class="footer__list-item">
+              <a class="footer__list-link" href="#">
+                Retailer Network
+              </a>
+            </li>
+            <li class="footer__list-item">
+              <a class="footer__list-link" href="#">
+                Help and FAQs
+              </a>
+            </li>
+            <li class="footer__list-item">
+              <a class="footer__list-link" href="#">
+                Scholarship
+              </a>
+            </li>
+            <li class="footer__list-item">
+              <a class="footer__list-link" href="#">
+                Contact Us
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer__social footer__item">
+          <div class="footer__item-title">
+            Follow us
+          </div>
+          <ul class="footer__list">
+            <li class="footer__list-item">
+              <a class="footer__list-link" href="#">
+                <img src="images/footer/facebook.svg" alt="">
+              </a>
+            </li>
+            <li class="footer__list-item">
+              <a class="footer__list-link" href="#">
+                <img src="images/footer/twitter.svg" alt="">
+              </a>
+            </li>
+            <li class="footer__list-item">
+              <a class="footer__list-link" href="#">
+                <img src="images/footer/istagram.svg" alt="">
+              </a>
+            </li>
+            <li class="footer__list-item">
+              <a class="footer__list-link" href="#">
+                <img src="images/footer/pinterest.svg" alt="">
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
   <script src="js/main.min.js"></script>
 </body>
+
 </html>
